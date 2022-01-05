@@ -1,0 +1,29 @@
+GET http://localhost:8080/api/v1/blogs
+
+###
+POST http://localhost:8080/api/v1/blogs
+Content-Type: application/json
+
+{
+  "id": 1,
+  "username": "jimmyD",
+  "title": "How to work and actually enjoy it",
+  "summary": "How one man came to terms with a terrible job",
+  "content": "it was the best of times, it was the worst of times and some other bad stuff happend too",
+  "localDate": "2022-01-03"
+}
+
+###
+POST http://localhost:8080/api/v1/blogs
+Content-Type: application/json
+
+{
+  "username": "morningSunshine",
+  "title": "Here and gone again",
+  "summary": "Another random blog about some dude and his trip to the beach",
+  "content": "tell me the story of the river again",
+  "localDate": "2022-01-04"
+}
+
+###
+GET http://localhost:8080/api/v1/blogs/2
